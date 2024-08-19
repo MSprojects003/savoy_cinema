@@ -1,0 +1,94 @@
+.closeform1{
+    color: wheat;
+    font-weight: 900;
+    font-size: 50px;
+    position: fixed;
+    top: 15px;
+    right: 75px;
+     
+    cursor: pointer;
+
+}
+.closeform1:hover{
+    color: silver;
+    transition: all 0.3s ease-in;
+}
+
+ form.form1{
+   background-color: rgb(0,0,0,0.3);
+    position: absolute;
+    padding: 40px;
+    gap: 16px;  
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    justify-content: center;
+     
+    align-items: center;
+    box-shadow: 0 0 10px black;
+     
+ }
+ .form1 input[type="text"],input[type="number"],input[type="email"],input[type="password"]{
+    background:rgb(0,0,0,0.4);
+    border: 1px solid #6f6565;
+    outline: none;
+    padding: 0.7em;
+    color:wheat !important;
+    
+    width :200px;
+ }
+ .form1 input[placeholder="Full Name"],input[placeholder="Email"],input[placeholder="Phone Number"],input[placeholder="Password"],input[placeholder="Confirm Password"]{
+    -webkit-text-fill-color: white;
+ }
+ 
+ .form1 button.signin{
+    background: linear-gradient(45deg, #850404, #4a0a0a);
+color: white;
+border: none;
+padding: 10px 20px;
+width: 100%;
+border-radius: none;
+font-size: 15px;
+font-weight: 900;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+box-shadow: 0 0 5px black;
+ }
+ .form1 button.signin:hover{
+    background: linear-gradient(105deg, #4c0a0a, #580909d6) !important;
+    transition: all 0.3s ease-in-out; 
+ }
+.verification{
+    background: rgb(0 0 0 / 71%);;
+padding: 50% 50%;
+flex-direction: row;
+display: none;
+position: fixed;
+top: 0;
+z-index: 4;
+}
+
+.log{
+     
+   padding: 10px;
+    color: white;
+    font-weight: 600;
+     
+    font-size: 30px;
+    transform: translate(-70px, 5px);
+     
+}
+.cap1{
+    color: rgba(188, 184, 184, 0.622);
+    margin-left: -30px;
+}
+#sign-up,.sign-in-form{
+    color: #fff;
+    
+}
+#sign-up:hover,.sign-in-form:hover{
+    text-decoration: underline;
+    transition: all 0.3s ease-in;
+    color: rgba(223, 215, 215, 0.899);
+}
+ 

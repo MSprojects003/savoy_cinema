@@ -1,0 +1,136 @@
+.slider-container {
+    width: 100%;
+    height:auto;
+    overflow: hidden;  
+    position: relative; 
+    margin-top: 50px !important;
+    filter: drop-shadow(3px 1px 5px rgba(1, 16, 74, 0.468));
+     
+     
+  }
+  .slider-container img{
+    max-width: 330px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    filter: blur(0) !important;
+    
+   
+
+
+  }
+  
+  /* Style for individual slides */
+  .slide {
+    width: 100%;
+    height: auto;
+    display: none;  
+   
+
+  }
+  .blur{
+    filter: blur(35px) !important;
+   padding: 50%;
+   scale: 1;
+   width: 100%;
+    
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   scale: 0.9;
+   transform: scaleX(1);
+   position: absolute;
+     
+  }
+  
+  /* Style for the active slide */
+  .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+     /* Show active slide */
+  }
+  
+  
+  .slide:not(.active) {
+    transform: translateX(-100%);
+  }
+  .about{
+    z-index: 1;
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+   
+
+  }
+  .about .name{
+    font-size: 2.5rem;
+    letter-spacing: 0.03rem;
+    font-family: monospace;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 3px 5px rgba(0,0,0,1);
+    margin-bottom: 10px;
+  }
+  .action2{
+    display: flex;
+    gap: 15px;
+  }
+  .about .action2 a{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 40px;
+    width: 180px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #444;
+    font-weight: bold;
+    text-shadow: 0 0 1px rgb(0,0,0,0.7);
+    box-shadow: 0 6px 8px rgba(5, 5, 5, 0.551);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .action2 a:hover{
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.944);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Style for the navigation buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+  @media(max-width:800px){
+     .slider-container{
+         width: 800px !important;
+     }
+  }
+
+  @media(max-width:600px){
+    .slider-container{
+      width: 600px !important ;
+    }
+  }
